@@ -29,9 +29,9 @@ const Work_5: React.FC = () => {
                             </p>
 
                             <blockquote>
-                                <p>"Making APIs publicly available isn't
+                                <p>&quot;Making APIs publicly available isn&apos;t
                                     a purely benevolent gesture on the part of providers. Most organisations recognize
-                                    that APIs represent a new and, in some cases, astoundingly profitable revenue stream..."
+                                    that APIs represent a new and, in some cases, astoundingly profitable revenue stream...&quot;
                                 </p>
                                 <small className="pull-right">Debbie Walkowski</small>
                             </blockquote>

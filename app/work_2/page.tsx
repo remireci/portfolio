@@ -28,7 +28,7 @@ const Work_1: React.FC = () => {
                             </p>
 
                             <blockquote>
-                                <p>"Of course, no e-commerce platform is perfect; there's only the solution which is best suited for your situation. Although some companies may be well-served by using WooCommerce, others would do better to have a custom e-commerce website that has been specially developed for their business. "</p>
+                                <p>&quot;Of course, no e-commerce platform is perfect; there&apos;s only the solution which is best suited for your situation. Although some companies may be well-served by using WooCommerce, others would do better to have a custom e-commerce website that has been specially developed for their business. &quot;</p>
                                 <small className="pull-right">Dave Devitt</small>
                             </blockquote>
                         </div>
@@ -47,7 +47,7 @@ const Work_1: React.FC = () => {
                                 <br />
                                 Invoices are automatically generated and stored in a database. They can be easily imported into any accounting software system.
                                 <br />
-                                This site is a next.js application deployed on Vercel, and using Supabase's PostgreSQL database for storing data.
+                                This site is a next.js application deployed on Vercel, and using Supabase&apos;s PostgreSQL database for storing data.
                                 <br />
                                 <br />
                             </p>

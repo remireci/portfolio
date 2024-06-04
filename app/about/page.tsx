@@ -43,7 +43,7 @@ const About: React.FC = () => {
                                         </ul>
                                         <p>
                                             Many small business owners may dismiss certain technologies out of
-                                            hand, thinking they're unaffordable or inapplicable to their business. In many cases, they couldn't
+                                            hand, thinking they&apos;re unaffordable or inapplicable to their business. In many cases, they couldn&apos;t
                                             be more wrong.
                                         </p>
                                         <h1 className="h3">debugging and refactoring</h1>

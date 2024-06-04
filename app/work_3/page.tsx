@@ -29,9 +29,9 @@ const Work_3: React.FC = () => {
                             </p>
 
                             <blockquote>
-                                <p>"Accounting for about two percent of total greenhouse gas emissions, data centres have the same carbon
+                                <p>&quot;Accounting for about two percent of total greenhouse gas emissions, data centres have the same carbon
                                     footprint as the aviation industry.
-                                    By 2040, storing digital data is set to create 14 percent of the world's emissions"</p>
+                                    By 2040, storing digital data is set to create 14 percent of the world&apos;s emissions&quot;</p>
                                 <small className="pull-right">Charlotte Trueman</small>
                             </blockquote>
                         </div>

@@ -27,9 +27,9 @@ const Work_4: React.FC = () => {
                             </p>
 
                             <blockquote>
-                                <p>"Artificial Neural Network (ANN) is an information-processing paradigm that is inspired
+                                <p>&quot;Artificial Neural Network (ANN) is an information-processing paradigm that is inspired
                                     by the way biological nervous systems,
-                                    such as the brain, processes information."</p>
+                                    such as the brain, processes information.&quot;</p>
                                 <small className="pull-right">Amit R. Wasukar</small>
                             </blockquote>
                         </div>
@@ -40,11 +40,11 @@ const Work_4: React.FC = () => {
                             </p>
                             <p>
                                 However, the calculations are done on the frontend. Therefore, the processing power of
-                                a small device is not sufficient to run this site. Please click on the link only if you're on your
+                                a small device is not sufficient to run this site. Please click on the link only if you&apos;re on your
                                 laptop or desktop.
                             </p>
                             <p>
-                                This application is not only demanding in terms of computing power, but also consumes a lot of energy. Don't let it run unnecessarily.
+                                This application is not only demanding in terms of computing power, but also consumes a lot of energy. Don&apos;t let it run unnecessarily.
                             </p>
                             <br />
                             <br />
