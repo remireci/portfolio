@@ -111,13 +111,14 @@ async function sendEmail(data: EmailData) {
 
   const smtpOptions = {
     host: process.env.SMTP_HOST,
-    port: parseInt(process.env.SMTP_PORT),
+    port: parseInt(process.env.SMTP_PORT || ""), // Using optional chaining and providing a fallback value
     secure: true,
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASSWORD,
     },
   };
+  
 
   // send the mail
   const transporter = nodemailer.createTransport(smtpOptions);
