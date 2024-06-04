@@ -1,0 +1,18 @@
+.works-des {
+    font-size: 2rem !important;
+    color: darkblue !important;
+}
+
+.ind-title {
+    margin-left: 50px;
+}
+
+.ind-desc {
+    margin-left: 80px;
+}
+
+.descr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50% !important;
+}
