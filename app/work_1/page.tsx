@@ -22,13 +22,13 @@ const Work_1: React.FC = () => {
                             <div className="text-center">
                                 <h1 className="h2">001 : React - Next.js web application</h1>
                             </div>
-                            <p>For many developers, the front end is where the magic happens. It&apos;s the space where code comes to life,
+                            <p>For many developers, the front end is where the magic happens. Its the space where code comes to life,
                                 transforming static HTML, CSS, and JavaScript into rich, interactive experiences.
                             </p>
                             <blockquote>
-                                <p>"React stands out in the crowded
+                                <p>&quot;React stands out in the crowded
                                     field of front-end libraries due to its unique set of features, designed to optimize performance, improve code
-                                    maintainability, and enhance the overall development experience."</p>
+                                    maintainability, and enhance the overall development experience.&quot;</p>
                                 <small className="pull-right">April Bohnert</small>
                             </blockquote>
                         </div>

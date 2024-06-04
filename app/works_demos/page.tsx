@@ -15,7 +15,7 @@ const Worksanddemos: React.FC = () => {
                         <div className="text-center">
                             <h1 className="h2">03 : Works & Demos</h1>
                             <p className="works-des"><b>This is a selection of works and (unfinished) demo projects. It gives an overview of the technologies that are used by
-                                <i> reciproque</i>. <br /><br /> =&gt; There's no code without bugs, no application without crashes. Reliable web and software development is characterised by the correct handling of accidents. &lt;=  </b>
+                                <i> reciproque</i>. <br /><br /> =&gt; There&apos;s no code without bugs, no application without crashes. Reliable web and software development is characterised by the correct handling of accidents. &lt;=  </b>
                             </p>
                         </div>
                     </div>
@@ -85,7 +85,7 @@ const Worksanddemos: React.FC = () => {
                                                 <h1 className="h3">Algorithms & Energy</h1>
                                                 <p>Under the surface of society algorithms are determining our lives. They might be helpful,
                                                     but also intrusive. In any case, they are energy consuming. Data centers account for around 2% of all
-                                                    global carbon emissions. Because data isn't physical, people are often unaware of its stark environmental impact.
+                                                    global carbon emissions. Because data isn&apos;t physical, people are often unaware of its stark environmental impact.
                                                     On this site the user can try several algorithms and compare their time efficiency.
                                                 </p>
                                                 <a href="./work_3" title="" className="btn btn-default">Discover</a>
@@ -110,7 +110,7 @@ const Worksanddemos: React.FC = () => {
                                                 <h4>004</h4>
                                                 <h1 className="h3">Self-Driving Car</h1>
                                                 <p>This application shows how a neural network teaches itself to be a better driver. Help your machine
-                                                    to compute a car that doesn't crash anymore.</p>
+                                                    to compute a car that doesn&apos;t crash anymore.</p>
                                                 <a href="./work_4" title="" className="btn btn-default">Discover</a>
                                             </div>
                                         </div>
