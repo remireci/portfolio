@@ -359,6 +359,10 @@ figure {
     margin: 0
 }
 
+.head-container {
+    min-height: 100vh;
+}
+
 img {
     vertical-align: middle
 }

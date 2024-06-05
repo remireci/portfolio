@@ -6,6 +6,7 @@ import "./styles/main.css";
 import Footer from './components/Footer';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -70,13 +71,14 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <div>
+        <div className='head-container'>
           <div id="site-border-left"></div>
           <div id="site-border-right"></div>
           <div id="site-border-top"></div>
           <div id="site-border-bottom"></div>
           <Header />
           {children}
+          <Analytics />
           <Footer />
           <BootstrapTooltip />
         </div>

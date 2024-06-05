@@ -2,7 +2,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { toast } from 'react-toastify';
-import Image from "next/image";
 
 const About: React.FC = () => {
     const router = useRouter();
@@ -18,16 +17,15 @@ const About: React.FC = () => {
 
         // Check if required fields are provided
         if (!email || !subject || !message) {
-            toast.error('Vul alle verplichte velden in!');
+            toast.error('Fill in all required fields!');
             return;
         }
 
         // Check if the provided email is valid
         if (email && !emailRegex.test(email)) {
-            toast.error('Je e-mailadres is niet geldig!');
+            toast.error('Your email address is not valid!');
             return;
         }
-
 
         try {
             const response = await fetch('/api/send-email', {
@@ -39,8 +37,8 @@ const About: React.FC = () => {
             });
 
             if (response.ok) {
-                toast.success("Message was sent successfully. We'll be in touch soon.")
-                router.push("/");
+                // toast.success("Message was sent successfully. We'll be in touch soon.")
+                router.push("/thankyou");
             } else {
                 // console.error('Error sending email');
                 const errorData = await response.json();
@@ -53,9 +51,10 @@ const About: React.FC = () => {
         }
     };
 
-
     return (
+        <div className="head-container min-h-full">
         <div className="section-container">
+            
             <div className="container">
                 <div className="row">
                     <div className="col-xs-12">
@@ -144,10 +143,9 @@ const About: React.FC = () => {
                     </div>
                 </div>
             </div>
+            </div>
         </div>
-
     )
-
 }
 
 export default About;

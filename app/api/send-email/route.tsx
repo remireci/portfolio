@@ -165,7 +165,6 @@ async function sendEmail(data: EmailData) {
 export async function POST(req: NextRequest, res: NextResponse) {
   try {
     const data: EmailData = await req.json();
-
     // await sendEmail(data);
     const emailResult = await sendEmail(data);
     return NextResponse.json({ message: emailResult }, { status: 200 });
