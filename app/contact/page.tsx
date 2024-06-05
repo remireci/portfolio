@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { toast } from 'react-toastify';
 
@@ -52,97 +52,96 @@ const About: React.FC = () => {
     };
 
     return (
-        <div className="head-container min-h-full">
-        <div className="section-container">
-            
-            <div className="container">
-                <div className="row">
-                    <div className="col-xs-12">
-                        <div className="section-container-spacer text-center">
-                            <h1 className="h2">05 : Contact</h1>
-                        </div>
+        <div className="head-container">
+            <div className="section-container">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xs-12">
+                            <div className="section-container-spacer text-center">
+                                <h1 className="h2">05 : Contact</h1>
+                            </div>
 
-                        <div className="row">
-                            <div className="col-md-10 col-md-offset-1">
-                                <form
-                                    onSubmit={handleSubmit}
-                                    className="reveal-content">
-                                    <div className="row">
-                                        <div className="col-md-7">
-                                            <div className="form-group">
-                                                <input
-                                                    value={email}
-                                                    onChange={(e) => setEmail(e.target.value)}
-                                                    type="email"
-                                                    className="form-control"
-                                                    id="email"
-                                                    placeholder="Email"
-                                                />
+                            <div className="row">
+                                <div className="col-md-10 col-md-offset-1">
+                                    <form
+                                        onSubmit={handleSubmit}
+                                        className="reveal-content">
+                                        <div className="row">
+                                            <div className="col-md-7">
+                                                <div className="form-group">
+                                                    <input
+                                                        value={email}
+                                                        onChange={(e) => setEmail(e.target.value)}
+                                                        type="email"
+                                                        className="form-control"
+                                                        id="email"
+                                                        placeholder="Email"
+                                                    />
+                                                </div>
+                                                <div className="form-group">
+                                                    <input
+                                                        value={subject}
+                                                        onChange={(e) => setSubject(e.target.value)}
+                                                        name="subject"
+                                                        type="text"
+                                                        className="form-control"
+                                                        id="subject"
+                                                        placeholder="Subject"
+                                                    />
+                                                </div>
+                                                <div className="form-group">
+                                                    <textarea
+                                                        value={message}
+                                                        onChange={(e) => setMessage(e.target.value)}
+                                                        name="message"
+                                                        className="form-control"
+                                                        rows={8}
+                                                        placeholder="Enter your message">
+                                                    </textarea>
+                                                </div>
+                                                <button type="submit" className="btn btn-default btn-lg">Send</button>
                                             </div>
-                                            <div className="form-group">
-                                                <input
-                                                    value={subject}
-                                                    onChange={(e) => setSubject(e.target.value)}
-                                                    name="subject"
-                                                    type="text"
-                                                    className="form-control"
-                                                    id="subject"
-                                                    placeholder="Subject"
-                                                />
+                                            <div className="col-md-5 address-container">
+                                                <ul className="list-unstyled">
+                                                    <li>
+                                                        <span className="fa-icon">
+                                                            <i className="fa fa-phone" aria-hidden="true"></i>
+                                                        </span>
+                                                        <a className="h4">+ 32 499 167 510</a>
+                                                    </li>
+                                                    <li>
+                                                        <span className="fa-icon">
+                                                            <i className="fa fa-at" aria-hidden="true"></i>
+                                                        </span>
+                                                        <a className="h4"
+                                                            href="mailto:info@reciproque.eu"
+                                                        // className='sm:text-sm hover:text-gray-400'
+                                                        >
+                                                            info@reciproque.eu
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <span className="fa-icon">
+                                                            <i className="fa fa fa-map-marker" aria-hidden="true"></i>
+                                                        </span>
+                                                        <a className="h4">Bertrix, Belgium</a>
+                                                    </li>
+                                                </ul>
+                                                <h3>Check my github and linkedin</h3>
+                                                <a href="https://github.com/remireci" target="_blank" title="" className="fa-icon">
+                                                    <i className="fa fa-github"></i>
+                                                </a>
+                                                <a href="https://www.linkedin.com/in/dirk-mertens-0b2b98258/" target="_blank" title="" className="fa-icon">
+                                                    <i className="fa fa-linkedin"></i>
+                                                </a>
                                             </div>
-                                            <div className="form-group">
-                                                <textarea
-                                                    value={message}
-                                                    onChange={(e) => setMessage(e.target.value)}
-                                                    name="message"
-                                                    className="form-control"
-                                                    rows={8}
-                                                    placeholder="Enter your message">
-                                                </textarea>
-                                            </div>
-                                            <button type="submit" className="btn btn-default btn-lg">Send</button>
                                         </div>
-                                        <div className="col-md-5 address-container">
-                                            <ul className="list-unstyled">
-                                                <li>
-                                                    <span className="fa-icon">
-                                                        <i className="fa fa-phone" aria-hidden="true"></i>
-                                                    </span>
-                                                    <a className="h4">+ 32 499 167 510</a>
-                                                </li>
-                                                <li>
-                                                    <span className="fa-icon">
-                                                        <i className="fa fa-at" aria-hidden="true"></i>
-                                                    </span>
-                                                    <a className="h4"
-                                                        href="mailto:info@reciproque.eu"
-                                                    // className='sm:text-sm hover:text-gray-400'
-                                                    >
-                                                        info@reciproque.eu
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <span className="fa-icon">
-                                                        <i className="fa fa fa-map-marker" aria-hidden="true"></i>
-                                                    </span>
-                                                    <a className="h4">Bertrix, Belgium</a>
-                                                </li>
-                                            </ul>
-                                            <h3>Check my github and linkedin</h3>
-                                            <a href="https://github.com/remireci" target="_blank" title="" className="fa-icon">
-                                                <i className="fa fa-github"></i>
-                                            </a>
-                                            <a href="https://www.linkedin.com/in/dirk-mertens-0b2b98258/" target="_blank" title="" className="fa-icon">
-                                                <i className="fa fa-linkedin"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     )
