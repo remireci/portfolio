@@ -10,7 +10,7 @@ const Thankyou: React.FC = () => {
                     <div className="row">
                         <div className="col-xs-12">
                             <div className="section-container-spacer text-center">
-                                <h1 className="h2">04 : Contact me</h1>
+                                <h1 className="h2">05 : Contact me</h1>
                             </div>
 
                             <div className="row">
