@@ -7,6 +7,9 @@ import Footer from './components/Footer';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Analytics } from "@vercel/analytics/react"
+import CookieBanner from './components/cookieBanner';
+import GoogleAnalytics from './components/GoogleAnalytics';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,7 +36,7 @@ const addJsonLd = () => {
       "name": "reciproque | web & software development",
       "alternateName": "it services",
       "url": "https://www.reciproque.eu",
-      "logo": "https://www.triangelloopbaancentrum.be/wp-content/uploads/2024/03/loopbaantest-SERP-image-01.jpg",
+      "logo": "",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+32499167510",
@@ -53,6 +56,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
+  const measurementId = process.env.GOOGLE_ANALYTICS;
+
+  console.log(measurementId);
+  
+
   return (
     <html lang="en">
       <head>
@@ -70,6 +80,7 @@ export default function RootLayout({
           key="product-jsonld"
         />
       </head>
+      {measurementId && <GoogleAnalytics GA_MEASUREMENT_ID={measurementId} />}
       <body>
         <div className='head-container'>
           <div id="site-border-left"></div>
@@ -78,6 +89,7 @@ export default function RootLayout({
           <div id="site-border-bottom"></div>
           <Header />
           {children}
+          <CookieBanner />
           <Analytics />
           <Footer />
           <BootstrapTooltip />

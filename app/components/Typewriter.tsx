@@ -54,12 +54,14 @@ const Typewriter: React.FC<TypewriterProps> = ({ typedText }) => {
 
   return (
     <div className="text-content">
-      <h2 className="ind-title">reciproque</h2>
-      <h1 className="ind-title h3 spacing">software and web development<br /><br /><br /></h1>
-      <h1 className="h3 spacing ind-desc inline-block relative ml-10" style={{ height: '1.5em', marginLeft: "1.5em" }}>
-        <span id="typed-strings">{currentText}</span>
-        {cursorVisible && <span className="cursor">|</span>}
-      </h1>
+      <div className="typewriter">
+        <h2 className="ind-title">reciproque</h2>
+        <h1 className="ind-title h3 spacing">software and web development<br /><br /><br /></h1>
+        <h1 className="h3 spacing ind-desc inline-block relative ml-10" style={{ height: '1.5em', marginLeft: "1.5em" }}>
+          <span id="typed-strings">{currentText}</span>
+          {cursorVisible && <span className="cursor">|</span>}
+        </h1>
+      </div>
     </div>
   );
 };

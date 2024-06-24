@@ -11,7 +11,7 @@ const Header: React.FC = () => {
     return (
         <header>
             <nav className={`navbar navbar-fixed-top  ${isHomePage ? "navbar-inverse" : "navbar-default"}`}>
-                <div className="container">
+                <div className="container header-container">
                     <button
                         type="button"
                         className="navbar-toggle collapsed"
@@ -26,13 +26,15 @@ const Header: React.FC = () => {
                     </button>
 
                     <div className="collapse navbar-collapse" id="navbar-collapse">
-                        <ul className="nav navbar-nav ">
-                            <li><a href="/" title="">01 : Home</a></li>
-                            <li><a href="/services" title="">02 : Services</a></li>
-                            <li><a href="/works_demos" title="">03 : Works & Demos</a></li>
-                            <li><a href="/about" title="">04 : About</a></li>
-                            <li><a href="/contact" title="">05 : Contact</a></li>
-                        </ul>
+                        <div className="navbar-left-wrapper">
+                            <ul className="nav navbar-nav ">
+                                <li><a href="/" title="">01 : Home</a></li>
+                                <li><a href="/services" title="">02 : Services</a></li>
+                                <li><a href="/works_demos" title="">03 : Works & Demos</a></li>
+                                <li><a href="/about" title="">04 : About</a></li>
+                                <li><a href="/contact" title="">05 : Contact</a></li>
+                            </ul>
+                        </div>
                         {isWorkPage && (
                             <ul className="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
                                 <li><a href="/work_1" title="">001</a></li>

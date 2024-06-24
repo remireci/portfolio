@@ -565,7 +565,7 @@ p {
     line-height: 1.4
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .lead {
         font-size: 16.5px
     }
@@ -770,7 +770,7 @@ dd {
     clear: both
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .dl-horizontal dt {
         float: left;
         width: 160px;
@@ -934,7 +934,7 @@ pre code {
     clear: both
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .container {
         width: 750px
     }
@@ -950,6 +950,45 @@ pre code {
     .container {
         width: 1170px
     }
+}
+
+
+/* New styles for header container */
+.header-container {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 100%; /* Default width */
+    /* margin-left: 3rem; */
+    /* margin-right: -5rem; */
+}
+
+.navbar-left-wrapper {
+    margin-left: 5rem;
+}
+
+@media (min-width: 770px) {
+    .header-container {
+        width: 800px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-container {
+        width: 970px
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-container {
+        width: 1240px; /* Custom width for header */
+    }
+}
+
+.typewriter {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the element horizontally */
+    display: block; /* Ensures the element takes the specified width */
 }
 
 .container-fluid {
@@ -1257,7 +1296,7 @@ pre code {
     margin-left: 100%
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
 
     .col-sm-1,
     .col-sm-2,
@@ -2744,7 +2783,7 @@ textarea.input-lg {
     color: #404040
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .form-inline .form-group {
         display: inline-block;
         margin-bottom: 0;
@@ -2834,7 +2873,7 @@ textarea.input-lg {
     clear: both
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .form-horizontal .control-label {
         text-align: right;
         margin-bottom: 0;
@@ -2846,14 +2885,14 @@ textarea.input-lg {
     right: 15px
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .form-horizontal .form-group-lg .control-label {
         padding-top: 11px;
         font-size: 14px
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .form-horizontal .form-group-sm .control-label {
         padding-top: 6px;
         font-size: 10px
@@ -3537,7 +3576,7 @@ tbody.collapse.in {
     margin-bottom: 2px
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .navbar-right .dropdown-menu {
         right: 0;
         left: auto
@@ -4052,7 +4091,7 @@ tbody.collapse.in {
     left: auto
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
 
     .nav-justified>li,
     .nav-tabs.nav-justified>li {
@@ -4086,7 +4125,7 @@ tbody.collapse.in {
     border: 1px solid #ddd
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
 
     .nav-tabs-justified>li>a,
     .nav-tabs.nav-justified>li>a {
@@ -4135,7 +4174,7 @@ tbody.collapse.in {
     clear: both
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .navbar {
         border-radius: 0
     }
@@ -4151,7 +4190,7 @@ tbody.collapse.in {
     clear: both
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .navbar-header {
         float: left
     }
@@ -4180,7 +4219,7 @@ tbody.collapse.in {
     overflow-y: auto
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .navbar-collapse {
         width: auto;
         border-top: 0;
@@ -4227,7 +4266,8 @@ tbody.collapse.in {
     margin-left: -15px
 }
 
-@media (min-width:768px) {
+@media (min-width:770
+px) {
 
     .container-fluid>.navbar-collapse,
     .container-fluid>.navbar-header,
@@ -4243,7 +4283,7 @@ tbody.collapse.in {
     border-width: 0 0 1px
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .navbar-static-top {
         border-radius: 0
     }
@@ -4257,7 +4297,7 @@ tbody.collapse.in {
     z-index: 1030
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
 
     .navbar-fixed-bottom,
     .navbar-fixed-top {
@@ -4293,7 +4333,7 @@ tbody.collapse.in {
     display: block
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
 
     .navbar>.container-fluid .navbar-brand,
     .navbar>.container .navbar-brand {
@@ -4329,7 +4369,7 @@ tbody.collapse.in {
     margin-top: 4px
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .navbar-toggle {
         display: none
     }
@@ -4371,7 +4411,7 @@ tbody.collapse.in {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .navbar-nav {
         float: left;
         margin: 0
@@ -4396,7 +4436,7 @@ tbody.collapse.in {
     box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .1), 0 1px 0 hsla(0, 0%, 100%, .1)
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .navbar-form .form-group {
         display: inline-block;
         margin-bottom: 0;
@@ -4467,7 +4507,7 @@ tbody.collapse.in {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .navbar-form {
         width: auto;
         border: 0;
@@ -4516,7 +4556,7 @@ tbody.collapse.in {
     margin-bottom: .5px
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .navbar-text {
         float: left;
         margin-left: 15px;
@@ -4524,7 +4564,7 @@ tbody.collapse.in {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .navbar-left {
         float: left !important
     }
@@ -5301,7 +5341,7 @@ button.close {
     text-shadow: none
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:770px) {
 
     .carousel-control .glyphicon-chevron-left,
     .carousel-control .glyphicon-chevron-right,
@@ -5446,7 +5486,7 @@ button.close {
     }
 }
 
-@media (min-width:768px) and (max-width:991px) {
+@media (min-width:770px) and (max-width:991px) {
     .visible-sm {
         display: block !important
     }
@@ -5465,19 +5505,19 @@ button.close {
     }
 }
 
-@media (min-width:768px) and (max-width:991px) {
+@media (min-width:770px) and (max-width:991px) {
     .visible-sm-block {
         display: block !important
     }
 }
 
-@media (min-width:768px) and (max-width:991px) {
+@media (min-width:770px) and (max-width:991px) {
     .visible-sm-inline {
         display: inline !important
     }
 }
 
-@media (min-width:768px) and (max-width:991px) {
+@media (min-width:770px) and (max-width:991px) {
     .visible-sm-inline-block {
         display: inline-block !important
     }
@@ -5563,7 +5603,7 @@ button.close {
     }
 }
 
-@media (min-width:768px) and (max-width:991px) {
+@media (min-width:770px) and (max-width:991px) {
     .hidden-sm {
         display: none !important
     }
@@ -5748,7 +5788,7 @@ body.minimal {
     min-height: 84vh
 }
 
-@media (max-width:768px) {
+@media (max-width:770px) {
     .section-container:first-of-type {
         padding-top: 30px
     }
@@ -5833,7 +5873,8 @@ h2:before {
     position: absolute;
     height: 100%;
     background-color: #000;
-    width: 1px
+    width: 2px;
+    transform: scaleX(0.5); /* Scale down to appear thinner */
 }
 
 .h2:before,
@@ -5977,7 +6018,7 @@ textarea {
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:770px) {
     .projects-carousel .carousel-control {
         display: none
     }
@@ -6036,7 +6077,7 @@ textarea {
     min-height: inherit
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .navbar {
         margin: 10px
     }
@@ -6053,7 +6094,7 @@ textarea {
     padding: 20px
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
 
     .navbar-default .navbar-collapse,
     .navbar-inverse .navbar-collapse {
@@ -6086,7 +6127,7 @@ textarea {
     background-color: #fff
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .navbar-inverse .navbar-nav>li>a {
         border-right: 1px solid #fff
     }
@@ -6106,13 +6147,13 @@ textarea {
     border-bottom: 1px solid #eee
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .navbar-default .navbar-nav {
         border: none
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) {
     .navbar-default .navbar-nav>li>a {
         border-right: 1px solid #000
     }
@@ -6128,7 +6169,7 @@ textarea {
     background-color: #fff
 }
 
-@media (max-width:768px) {
+@media (max-width:770px) {
     .navbar-inverse {
         background-color: transparent
     }
@@ -6206,10 +6247,109 @@ textarea {
     width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
     .descr {
         width: 50%; 
     }
 }
+
+.cookie-container {
+    position: fixed; /* fixed */
+    bottom: 0; /* bottom-0 */
+    left: 0; /* left-0 */
+    display: flex; /* flex */
+    flex-direction: row; /* flex-col */
+    width: 100%; /* w-full */
+    justify-content: flex-end; /* justify-end */
+    align-items: end; /* items-center */
+    background-color: rgba(210, 210, 218, 0.75); /* bg-gray-translucent */
+    padding-left: 2rem; /* px-8 */
+    padding-right: 2rem; /* px-8 */
+    padding-bottom: 0.5rem; /* dm:pb-2 */
+    z-index: 50; /* z-50 */
+}
+
+
+/* show demo site banner */
+@keyframes slide-in-from-top {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .banner-slide-in {
+    animation: slide-in-from-top 1s ease;
+  }
+  
+  
+  .slide-in {
+    transform: translateX(100%);
+    animation: slide-in 0.5s forwards;
+  }
+
+.cookie-container.md\\:max-w-screen {
+    max-width: 100vw; /* md:max-w-screen */
+}
+
+.cookie-container.md\\:px-4 {
+    padding-left: 1rem; /* md:px-4 */
+    padding-right: 1rem; /* md:px-4 */
+}
+
+.cookie-container.sm\\:flex-row {
+    flex-direction: row; /* sm:flex-row */
+}
+
+.text-center {
+    text-align: center; /* text-center */
+}
+
+.text-sky {
+    color: rgba(23, 163, 243, 0.75); /* text-sky-400 */
+}
+
+.cookie-text {
+    color: rgba(17, 76, 83, 0.8);
+    margin-right: 2rem;
+}
+
+.font-bold {
+    font-weight: 700; /* font-bold */
+}
+
+.flex {
+    display: flex; /* flex */
+}
+
+.gap-2 {
+    gap: 0.5rem; /* gap-2 */
+}
+
+.button-decline {
+    background-color: rgba(114, 114, 115, 0.61);
+    padding-left: 1.25rem; /* px-5 */
+    padding-right: 1.25rem; /* px-5 */
+    padding-top: 0.5rem; /* py-2 */
+    padding-bottom: 0.5rem; /* py-2 */
+    color: #d1d5db; /* text-gray-300 */
+    border-radius: 0.375rem; /* rounded-md */
+    border: 1px solid #1f2937; /* border-gray-900 */
+}
+
+.button-allow {
+    background-color: #1f2937; /* bg-gray-900 */
+    padding-left: 1.25rem; /* px-5 */
+    padding-right: 1.25rem; /* px-5 */
+    padding-top: 0.5rem; /* py-2 */
+    padding-bottom: 0.5rem; /* py-2 */
+    color: #ffffff; /* text-white */
+    border-radius: 0.5rem; /* rounded-lg */
+}
+
 
 /*# sourceMappingURL=main.70a66962.map*/

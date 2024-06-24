@@ -14,8 +14,11 @@ const Footer: React.FC = () => {
                 <div className="row">
                     {isNotHomePage && (
                         <div className="col-xs-12">
-                            <p>© RECIPROQUE | Website created with <a href="http://www.mashup-template.com/"
-                                title="Create website with free html template">Mashup Template</a>/</p>
+                            <p>© RECIPROQUE | Website created with &nbsp;
+                                {/* <a href="http://www.mashup-template.com/" title="Create website with free html template"> */}
+                                     Mashup Template
+                                    {/* </a> */}
+                                    /</p>
                         </div>
                     )}
                 </div>

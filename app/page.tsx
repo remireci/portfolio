@@ -7,7 +7,7 @@ import Typewriter from './components/Typewriter';
 
 const getText = async (): Promise<string[]> => {
   const preRenderedText = [
-    'java | type script, python',
+    'javascript, typescript, python',
     'search engine optimization (SEO)',
     'algorithms, data structures',
     'debugging, refactoring',
