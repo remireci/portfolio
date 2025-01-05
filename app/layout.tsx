@@ -58,10 +58,10 @@ export default function RootLayout({
 }>) {
 
 
-  const measurementId = process.env.GOOGLE_ANALYTICS;
+  const measurementId = "G-THW4Y8EY63";
 
   console.log(measurementId);
-  
+
 
   return (
     <html lang="en">

@@ -29,8 +29,8 @@ const Header: React.FC = () => {
                         <div className="navbar-left-wrapper">
                             <ul className="nav navbar-nav ">
                                 <li><a href="/" title="">01 : Home</a></li>
-                                <li><a href="/services" title="">02 : Services</a></li>
-                                <li><a href="/works_demos" title="">03 : Works & Demos</a></li>
+                                <li><a href="/works_demos" title="">02 : Works & Demos</a></li>
+                                <li><a href="/services" title="">03 : Services</a></li>
                                 <li><a href="/about" title="">04 : About</a></li>
                                 <li><a href="/contact" title="">05 : Contact</a></li>
                             </ul>

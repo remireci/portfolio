@@ -73,7 +73,7 @@ const About: React.FC = () => {
                                         </p>
                                         <p>
                                             We code in Javascript, Typescript and Python - and sometimes in C#.
-                                            Of course we use SQL for databases.
+                                            Of course we use (No)SQL for databases.
                                         </p>
                                     </div>
                                     <div className="col-xs-12 col-md-6">

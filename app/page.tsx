@@ -8,12 +8,14 @@ import Typewriter from './components/Typewriter';
 const getText = async (): Promise<string[]> => {
   const preRenderedText = [
     'javascript, typescript, python',
+    '(cloud-based) back-end, front-end',
+    'node.js, react, next.js',
+    'SQL and NoSQL databases, GraphQL',
     'search engine optimization (SEO)',
     'algorithms, data structures',
     'debugging, refactoring',
-    'databases, analysis',
     'testing, automation',
-    'machine learning',
+    'machine learning, llm',
   ];
 
   return preRenderedText;

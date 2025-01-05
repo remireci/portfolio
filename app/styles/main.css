@@ -1071,10 +1071,11 @@ pre code {
 .col-xs-10,
 .col-xs-11,
 .col-xs-12 {
-    position: relative;
+    margin-top: 50px;
+    position: relative;    
     min-height: 1px;
     padding-left: 15px;
-    padding-right: 15px
+    padding-right: 15px;    
 }
 
 .col-xs-1,
