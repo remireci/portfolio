@@ -8,6 +8,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Analytics } from "@vercel/analytics/react"
 import CookieBanner from './components/cookieBanner';
+import { Suspense } from "react";
 import GoogleAnalytics from './components/GoogleAnalytics';
 
 
@@ -58,7 +59,7 @@ export default function RootLayout({
 }>) {
 
 
-  const measurementId = "G-THW4Y8EY63";
+  const measurementId = process.env.GOOGLE_ANALYTICS;
 
   console.log(measurementId);
 
@@ -80,7 +81,11 @@ export default function RootLayout({
           key="product-jsonld"
         />
       </head>
-      {measurementId && <GoogleAnalytics GA_MEASUREMENT_ID={measurementId} />}
+      {measurementId && (
+        <Suspense fallback={<div>Loading analytics...</div>}>
+          <GoogleAnalytics GA_MEASUREMENT_ID={measurementId} />
+        </Suspense>
+      )}
       <body>
         <div className='head-container'>
           <div id="site-border-left"></div>
