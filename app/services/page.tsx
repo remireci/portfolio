@@ -12,7 +12,7 @@ const Services: React.FC = () => {
                     <div className="row">
                         <div className="col-sm-8 col-sm-offset-2 section-container-spacer">
                             <div className="text-center">
-                                <h1 className="h2">02 : Services</h1>
+                                <h1 className="h2">03 : Services</h1>
                                 <p className="h3"><b>under construction</b>
                                 </p>
                             </div>

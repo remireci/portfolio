@@ -13,7 +13,7 @@ const Worksanddemos: React.FC = () => {
                 <div className="row">
                     <div className="col-sm-8 col-sm-offset-2 section-container-spacer">
                         <div className="text-center">
-                            <h1 className="h2">03 : Works & Demos</h1>
+                            <h1 className="h2">02 : Works & Demos</h1>
                             <p className="works-des"><b>This is a selection of works and (unfinished) demo projects. It gives an overview of the technologies that are used by
                                 <i> reciproque</i>. <br /><br /> =&gt; There&apos;s no code without bugs, no application without crashes. Reliable web and software development is characterised by the correct handling of accidents. &lt;=  </b>
                             </p>
