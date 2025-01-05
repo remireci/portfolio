@@ -6,19 +6,19 @@ import { usePathname } from "next/navigation";
 const Footer: React.FC = () => {
 
     const path = usePathname();
-    const isNotHomePage = path != "/";
+    const isHomePage = path === '/';
 
     return (
-        <footer className="footer-container text-center">
+        <footer className={`footer-container text-center ${isHomePage ? "inverse" : ""}`}>
             <div className="container">
                 <div className="row">
-                    {isNotHomePage && (
+                    {!isHomePage && (
                         <div className="col-xs-12">
                             <p>© RECIPROQUE | Website created with &nbsp;
                                 {/* <a href="http://www.mashup-template.com/" title="Create website with free html template"> */}
-                                     Mashup Template
-                                    {/* </a> */}
-                                    /</p>
+                                Mashup Template
+                                {/* </a> */}
+                                /</p>
                         </div>
                     )}
                 </div>

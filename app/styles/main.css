@@ -5391,6 +5391,10 @@ button.close {
     margin-right: auto
 }
 
+.footer-container.text-center.inverse {
+    background-color: black !important;
+  }
+
 .pull-right {
     float: right !important
 }

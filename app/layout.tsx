@@ -51,18 +51,13 @@ const addJsonLd = () => {
   }
 }
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
 
-
   const measurementId = process.env.GOOGLE_ANALYTICS;
-
-  console.log(measurementId);
-
 
   return (
     <html lang="en">
