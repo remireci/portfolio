@@ -14,13 +14,11 @@ export default function CookieBanner() {
             setCookieConsent(storedCookieConsent);
             setBannerVisible(false);
         } else {
-
             const showTimeout = setTimeout(() => {
                 setBannerVisible(true);
             }, 1500);
-    
+
             return () => clearTimeout(showTimeout);
-            
         }
     }, []);
 
