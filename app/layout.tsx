@@ -77,24 +77,26 @@ export default function RootLayout({
         />
       </head>
       {measurementId && (
-        <Suspense fallback={<div>Loading analytics...</div>}>
-          <GoogleAnalytics GA_MEASUREMENT_ID={measurementId} />
-        </Suspense>
+
+        <GoogleAnalytics GA_MEASUREMENT_ID={measurementId} />
+
       )}
       <body>
-        <div className='head-container'>
-          <div id="site-border-left"></div>
-          <div id="site-border-right"></div>
-          <div id="site-border-top"></div>
-          <div id="site-border-bottom"></div>
-          <Header />
-          {children}
-          <CookieBanner />
-          <Analytics />
-          <Footer />
-          <BootstrapTooltip />
-        </div>
-        <ToastContainer />
+        <Suspense fallback={<div>Loading analytics...</div>}>
+          <div className='head-container'>
+            <div id="site-border-left"></div>
+            <div id="site-border-right"></div>
+            <div id="site-border-top"></div>
+            <div id="site-border-bottom"></div>
+            <Header />
+            {children}
+            <CookieBanner />
+            <Analytics />
+            <Footer />
+            <BootstrapTooltip />
+          </div>
+          <ToastContainer />
+        </Suspense>
       </body>
     </html>
   );

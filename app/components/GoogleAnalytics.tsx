@@ -28,7 +28,7 @@ function GoogleAnalyticsInner({ GA_MEASUREMENT_ID }: { GA_MEASUREMENT_ID: string
 
     useEffect(() => {
 
-        console.log(pathname);
+        // console.log(pathname);
         pageview(GA_MEASUREMENT_ID, pathname);
 
     }, [pathname, GA_MEASUREMENT_ID]);
