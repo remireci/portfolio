@@ -17,7 +17,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "reciproque",
   description: "web and software development",
-  keywords: 'Belgium, France, Luxembourg, web application development, software engineer, business software, data processing, analysis',
+  keywords: 'ful stack, cloud based back end, react, next.js, (No)SQL, Belgium, France, Luxembourg, web application development, software engineer, business software, data processing',
   icons: {
     icon: '/favicon.ico',
     // apple: '/apple-icon.png',
@@ -59,6 +59,8 @@ export default function RootLayout({
 
   const measurementId = process.env.GOOGLE_ANALYTICS;
 
+  console.log("this is the id", measurementId);
+
   return (
     <html lang="en">
       <head>
@@ -76,11 +78,7 @@ export default function RootLayout({
           key="product-jsonld"
         />
       </head>
-      {measurementId && (
-
-        <GoogleAnalytics GA_MEASUREMENT_ID={measurementId} />
-
-      )}
+      {measurementId && <GoogleAnalytics GA_MEASUREMENT_ID={measurementId} />}
       <body>
         <Suspense fallback={<div>Loading analytics...</div>}>
           <div className='head-container'>
